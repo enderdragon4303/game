@@ -41,8 +41,6 @@ var game = {
     auto: document.getElementById("auto"),
     prestigebutton: document.getElementById("prestigebutton"),
     saved: document.getElementById("saved"),
-    got100: document.getElementById("got100"),
-    got1k: document.getElementById("got1k"),
   },
   prestige: {
     mult: 1,
@@ -465,23 +463,6 @@ function showprestige() {
     docID.prestigebutton.classList.toggle("hidden");
   }
 }
-function close(type) {
-  console.log("in function close. Type =" + type);
-  switch (type) {
-    case 100:
-      console.log("in case 100");
-      console.log(docID.got100); 
-      docID.got100.classList.toggle("hide", true);
-      break;
-    case 1000:
-      console.log("in case 1000");
-      console.log(docID.got1k);
-      docID.got1k.classList.toggle("hide", true);
-      break;
-    default:
-      console.error("unknown type for close ('type');");
-  };
-};
 setInterval(round, 10);
 setInterval(auto, 100);
 setInterval(showprestige, 100);
