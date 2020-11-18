@@ -19,10 +19,6 @@
 .lowerbackg {
   background-color: cadetblue;
 }
-/* Use #unfinishedlink sparingly */
-#unfinishedlink {
-  color: darkred;
-}
 .top{
   background-color: cadetblue;
   height: 100px
