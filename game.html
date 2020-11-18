@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>My Game</title>
+  </head>
+  <body>
+    <div class="top">
+      <div class="links1">
+        <header class="backg">
+          <a href="https://www.youtube.com/channel/UCkvfgV7VoFJmNQoVzyzhU8g"><img src="/img/youtubeIcon.png" alt="Youtube"></a>
+          <a href="https://twitter.com/ender_da_fox/media"><img  src="/img/twitterIcon.png" alt="Twitter"></a>
+          <a href="/Under_construction.html"><img src="/img/discordIcon.png" alt="Discord"></a>
+          <a href="/Under_construction.html"><img src="/img/facebookIcon.png" alt="facebook"></a>
+        </header>
+      </div>
+      <div class="toptitle">
+        <h1 class="rainbow">Game</h1>
+      </div>
+    </div>
+    <div class="lowerbackg">
+      <div class="nav">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pictures.html">Pictures</a></li>
+          <li><a href="/other.html">Other</a></li>
+          <li><a href="/game/game.html" class="active">Game</a></li>
+          <li>
+            <div class="dropdown">
+              <button id="dropbtn"><a href="/settings.html">Settings <i class="fas fa-caret-down"></i></a></button>
+              <div class="dropdown-content">
+                <a href="/settings.html#general">General</a>
+                <a href="/settings.html#access">Accessibility</a>
+              </div>
+            </div>
+          </li>
+          <li style="float:right"><a href="/Under_construction.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="game" class="gametext">
+      <div class="ttopmenu">
+        <div class="topmenu">
+          <div class="item">
+            <div class="itembox">
+              <div class="costholder" id="chold1" onclick="upglvl1(event)">
+                <p class="cost" id="cost1">$10</p>
+              </div>
+              <h1 class="plusone">+1</h1>
+            </div>
+            <div class="itembox">
+              <div class="costholder" id="chold2" onclick="upglvl2(event)">
+                <p class="cost" id="cost2">$1000</p>
+              </div>
+              <h1 class="plusone">+1</h1>
+            </div>
+            <div class="itembox">
+              <div class="costholder" id="chold3" onclick="upglvl3(event)">
+                <p class="cost" id="cost3">$100000</p>
+              </div>
+              <h1 class="plusone">+1</h1>
+            </div>
+            <div class="itembox">
+              <div class="costholder" id="chold4" onclick="upglvl4(event)">
+                <p class="cost" id="cost4">$10000000</p>
+              </div>
+              <h1 class="plusone">+1</h1>
+            </div>
+            <div class="itembox">
+              <div class="costholder" id="chold5" onclick="upglvl5(event)">
+                <p class="cost" id="cost5">$1000000000</p>
+              </div>
+              <h1 class="plusone">+1</h1>
+            </div>
+            <div class="itembox">
+              <div class="costholder" id="chold6" onclick="upglvl6(event)">
+                <p class="cost" id="cost6">$1T</p>
+              </div>
+              <h1 class="plusone">+1</h1>
+            </div>
+            <div class="itembox">
+              <div class="costholder" id="chold7" onclick="upglvl7(event)">
+                <p class="cost" id="cost7">$1q</p>
+              </div>
+              <h1 class="plusone">+1</h1>
+            </div>
+          </div>
+        </div>
+        <div class="totalmenu">
+          <div class="total">
+            <div class="totalbox">
+              <h4 id="baseclick" class="totaltext">1</h4>
+            </div>
+            <div class="mult">
+              <h4 class="totaltext">x</h4>
+            </div>
+            <div class="totalbox">
+              <h4 id="firstmul" class="totaltext">1</h4>
+            </div>
+            <div class="mult">
+              <h4 class="totaltext">x</h4>
+            </div>
+            <div class="totalbox">
+              <h4 id="secondmul" class="totaltext">1</h4>
+            </div>
+            <div class="mult">
+              <h4 class="totaltext">x</h4>
+            </div>
+            <div class="totalbox">
+              <h4 id="thirdmul" class="totaltext">1</h4>
+            </div>
+            <div class="mult">
+              <h4 class="totaltext">x</h4>
+            </div>
+            <div class="totalbox">
+              <h4 id="fourthmul" class="totaltext">1</h4>
+            </div>
+            <div class="mult">
+              <h4 class="totaltext">x</h4>
+            </div>
+            <div class="totalbox">
+              <h4 id="fithmul" class="totaltext">1</h4>
+            </div>
+            <div class="mult">
+              <h4 class="totaltext">x</h4>
+            </div>
+            <div class="totalbox">
+              <h4 id="sixthmul" class="totaltext">1</h4>
+            </div>
+            <div class="mult equal">
+              <h4 class="totaltext">=</h4>
+            </div>
+            <div class="totalbox">
+              <h4 id="total" class="totaltext">1</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="game">
+        <a class="save" onclick="save()">save</a>
+        <p class="saved" id="saved">Saved</p>
+        <a class="delsave" onclick="deletesave()">delete save</a>
+        <div class="rightgame">
+          <ul>
+            <li><a class="auto" id="auto" onclick="buyauto()"><p id="autotext">Auto<br> $1M</p></a></li>
+            <li><a class="prestige hidden" id="prestigebutton" onclick="game.prestige.prestige()"><p id="prestige">Prestige<br> $100K</p></a></li>
+          </ul>
+        </div>
+        <div class="thebutton" onclick="getpoints()">
+        </div>
+        <!-- HERE -->
+        <div class="infocards">
+          <div class="snackbar" id="got100">
+            <span class="close" onclick="close(100)">&times;</span>
+            <p class="snackcontent">You Got $100!</p>
+          </div>
+          <div class="snackbar" id="got1k">
+            <span class="close" onclick="close(1000)">&times;</span>
+            <p class="snackcontent">You Got $1k!</p>
+          </div>
+        </div>
+        <!-- TO HERE -->
+      </div>
+      <div class="moneybox">
+        <p id="cash">$0</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

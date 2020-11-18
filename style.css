@@ -1,0 +1,322 @@
+.links1 img {
+  height: 30px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #3d3d3d #3d3d3d black black;
+  background-color: #292929;
+}
+.links1 img:hover{
+  border-color: lightgray lightgray black black;
+  background-color: gray;
+}
+.backg {
+  height: 36px;
+  width: 164px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)
+}
+.lowerbackg {
+  background-color: cadetblue;
+}
+/* Use #unfinishedlink sparingly */
+#unfinishedlink {
+  color: darkred;
+}
+.top{
+  background-color: cadetblue;
+  height: 100px
+}
+.toptitle h1 {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translate(-52%,30%);
+  font-family: cursive;
+  height: 50px;
+  pointer-events: none;
+}
+.rainbow {
+  background-image: repeating-linear-gradient(to left,red, violet, indigo, blue, green, yellow, orange, red);
+  background-clip: unset; 
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: test 15s infinite linear;
+  width: 300px;
+}
+.nav ul{
+  list-style-type: none;
+  margin: 0px 8px;
+  padding: 0;
+  overflow: hidden;
+  background-color: black !important;
+}
+.nav button {
+  background-color: black;
+  color: white;
+  padding: 1px;
+  border: none;
+  font-size: 14px;
+}
+.nav li{
+  float: left;
+  border-right: 2px solid gray;
+}
+.nav li:last-child {
+  border: none;
+}
+.nav li:first-child {
+  border-left: 3px solid black;
+}
+.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+  background-color: black;
+}
+.dropdown .dropbtn {
+  background-color: inherit;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: black;
+  border:solid gray;
+  border-width: 0px 2px 2px 2px;
+  transform: translateX(-2px);
+}
+.dropdown-content a {
+  float: none;
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  padding-left: 3px;
+  padding-right: 12px;
+  border-top: 1px solid gray;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.active {
+  background-color:darkolivegreen
+}
+.topmenu {
+  height: 111px;
+  padding-top: 1px;
+  background-color: darkblue;
+  min-width: 975px;
+  border-bottom: 1px solid white;
+}
+.ttopmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+.game {
+  background-color: gray;
+  height: 385px;
+  position: relative;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.moneybox {
+  background-color: black;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+#cash {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  color: white;
+  background-color: black;
+} 
+.thebutton {
+  position: absolute;
+  left: 50%;
+  height: 300px;
+  width: 300px;
+  background-image: repeating-radial-gradient(rgb(146, 146, 146),rgb(68, 68, 68), black, black);
+  transform: translate(-50%,15%);
+  border-radius: 100%;
+}
+.thebutton:active {
+  background-image: repeating-radial-gradient(red,darkred,black, black);
+}
+.save {
+  background-image: repeating-linear-gradient(darkgreen,lightgreen,darkgreen);
+  margin: 3px;
+  border: 1px solid;
+  cursor: pointer;
+}
+.delsave {
+  background-image: linear-gradient(darkred, red, darkred);
+  border: 1px solid;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  cursor: pointer;
+}
+.itembox {
+  display: inline-block;
+  height: 98px;
+  width: 98px;
+  border: 1px solid;
+  margin: 3px;
+  margin-right: 13px;
+  padding: 2px;
+  background-image: repeating-linear-gradient(to left,black,rgb(39, 39, 39),black);
+}
+.cost {
+  color: white;
+  padding: 1px 2px;
+  margin: 0px;
+  text-align: center;
+}
+.costholder {
+  background-image: linear-gradient(brown,rgb(197, 98, 27), brown);
+}
+.costholder:hover {
+  cursor: pointer;
+}
+.plusone {
+  color: wheat;
+  text-align: center;
+}
+.totalmenu {
+  height: 27px;
+  min-width: fit-content;
+  background-color: black;
+}
+.totalbox {
+  display: inline-block;
+  position: relative;
+  height: 23px;
+  width: 102px;
+  margin: 0px;
+  margin-right: 1px;
+  padding: 0px;
+}
+.totalbox:first-child {
+  margin-left: 3px;
+}
+.mult {
+  display: inline-block;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 1px;
+  height: 23px;
+}
+.totaltext {
+  color: gold;
+  margin: 0px;
+  padding: 2px;
+  text-align: center;
+}
+.auto {
+  text-align: center;
+  position: relative;
+  height: 52px;
+  width: 52px;
+  border-radius: 100%;
+  background-color: goldenrod;
+  padding: 6px;
+  background-image: radial-gradient(gold,goldenrod,rgb(107, 83, 21));
+}
+.auto.on {
+  background-image: radial-gradient(green, rgb(0, 53, 0));
+}
+.gametext {
+  user-select: none;
+}
+.prestige {
+  border-radius: 100%;
+  height: 52px;
+  width: 52px;
+  padding: 6px;
+  text-align: center;
+  background-image: radial-gradient(darkred,indigo);
+}
+#prestige {
+  position: relative;
+  margin: 0px;
+  top: 8px;
+}
+.rightgame {
+  float: right;
+  width: 75px;
+  padding-top: 0px;
+}
+.rightgame ul {
+  float: right;
+  margin: 0px;
+}
+.rightgame li {
+  list-style-type: none;
+  padding: 4px;
+  width: auto;
+}
+.rightgame a {
+  display: block;
+  cursor: pointer;
+}
+#autotext {
+  position: relative;
+  bottom: 21%;
+}
+.saved {
+  width: fit-content;
+  padding: 9px;
+  position: fixed;
+  font-family: cursive;
+  font-size: xx-large;
+  text-align: center;
+  color: black;
+  margin-left: 19px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  text-shadow: 0px 0px 3px #FF0000, 0 0 5px #0000FF;
+  display: none;
+}
+.show {
+  display: block;
+}
+.hidden {
+  visibility: hidden;
+}
+.unbuyable {
+  background-image: linear-gradient(gray, darkgray, gray);
+  cursor: not-allowed;
+}
+.infocards {
+  float: right;
+}
+.snackbar {
+  width: fit-content;
+  bottom: 3%;
+  right: 3%;
+  background-color: rgb(39, 39, 39);
+  box-shadow: 5px 5px 20px black;
+  border: 1px solid black;
+  border-radius: 20%;
+  padding-left: 13px;
+  margin: 3px;
+}
+.snackbar span {
+margin-left: 100px;
+color: red;
+position: relative;
+right: 5%;
+top: 2%;
+cursor: pointer;
+}
+.hide {
+  display: none !important;
+}
